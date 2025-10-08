@@ -1,0 +1,150 @@
+body {
+    /* Step 2: shripft*/
+    font-family: 'Poppins', sans-serif; 
+    margin: 0;
+    padding: 0;
+    /* Step 3: backgroud color*/
+    background-color: #f4f7fa; 
+    color: #333;
+    line-height: 1.6;
+}
+.header-section {
+    text-align: center;
+    /* Step 4: paddning the layout */
+    padding: 2rem; 
+}
+.header-background {
+    /* Step 3: adding the gradient */
+    background: linear-gradient(135deg, #007bff, #00c6ff); 
+    color: white;
+}
+/* Step 2: */
+.main-heading {
+    font-size: 2.5rem;   
+    font-weight: 600;    
+}
+/* Step 3: */
+.highlighted-text {
+    font-weight: bold;
+    color: #ffdf00; 
+}
+/* Step 5: navigation menu */
+#navbar {
+    /* color of the another background */
+    background-color: #222; 
+}
+.nav-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    /* Step 4: adding the flexbox */
+    display: flex; 
+    justify-content: center;
+}
+.nav-item {
+    margin: 0 15px; 
+}
+.nav-link {
+    text-decoration: none;  
+    color: white;
+    font-weight: 500;
+    /* Step 8: adding the transition */
+    transition: color 0.3s;  
+}
+.nav-link:hover,
+.nav-link:focus {          
+    /* Step 9: adding the accessibility with hover and focus */
+    color: #00c6ff;
+    /* Step 9: focus */
+    outline: 2px solid #00c6ff; 
+    outline-offset: 2px;
+}
+/* Step 4: making the box layout and model */
+.layout-section {
+    padding: 2rem;
+}
+.contentbox {
+    background-color: white; 
+    border: 1px solid #ddd;  
+    margin: 20px auto;
+    max-width: 800px;        
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1); 
+}
+.section-heading {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+}
+.paragraph-text {
+    font-size: 1rem;
+    text-align: justify; 
+}
+/* Step 6: media */
+.featured-image {
+    width: 100%;
+    max-width: 600px;
+    display: block;
+    margin: 10px auto;
+    border-radius: 10px; 
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2); 
+}
+.image-thumbnail {
+    width: 150px;
+    margin: 10px;
+    border: 2px solid #007bff; 
+    border-radius: 8px;
+    transition: transform 0.3s; 
+}
+.image-thumbnail:hover {
+    /* Step 8: adding the hover effect */
+    transform: scale(1.05); 
+}
+/* Step 7: adding forms */
+.form-input {
+    display: block;
+    width: 100%;
+    padding: 10px;  
+    margin: 10px 0; 
+    border: 1px solid #aaa;
+    border-radius: 6px;
+}
+.submit-btn {
+    background-color: #007bff; 
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: background-color 0.3s; 
+}
+.submit-btn:hover, .submit-btn:focus {  
+    background-color: #0056b3;
+    outline: none;
+}
+.footer-bg {
+    background-color: #222;
+    text-align: center;
+    padding: 1rem;
+    color: white;
+}
+
+/* Step 8: adding pseudo-elements on the button */
+.btn-hover-effect {
+    position: relative;
+}
+.btn-hover-effect::after {
+    content: " →";
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+.btn-hover-effect:hover::after {
+    opacity: 1;
+}
+/* Step 1: descendant selector */
+.nav-list .nav-link {
+     padding: 0.5rem 0.75rem; 
+}
+.layout-section .section-heading {
+     margin-top: 0; 
+}
