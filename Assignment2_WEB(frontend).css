@@ -1,75 +1,62 @@
 body {
-    /* Step 2: shripft*/
-    font-family: 'Poppins', sans-serif; 
+    font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
-    /* Step 3: backgroud color*/
-    background-color: #f4f7fa; 
+    background-color: #f4f7fa;
     color: #333;
     line-height: 1.6;
 }
 .header-section {
     text-align: center;
-    /* Step 4: paddning the layout */
-    padding: 2rem; 
+    padding: 2rem;
 }
 .header-background {
-    /* Step 3: adding the gradient */
-    background: linear-gradient(135deg, #007bff, #00c6ff); 
+    background: linear-gradient(135deg, #007bff, #00c6ff);
     color: white;
 }
-/* Step 2: */
 .main-heading {
-    font-size: 2.5rem;   
-    font-weight: 600;    
+    font-size: 2.5rem;
+    font-weight: 600;
 }
-/* Step 3: */
 .highlighted-text {
     font-weight: bold;
-    color: #ffdf00; 
+    color: #ffdf00;
 }
-/* Step 5: navigation menu */
 #navbar {
-    /* color of the another background */
-    background-color: #222; 
+    background-color: #222;
 }
 .nav-list {
     list-style: none;
     margin: 0;
     padding: 0;
-    /* Step 4: adding the flexbox */
-    display: flex; 
+    display: flex;
     justify-content: center;
 }
 .nav-item {
-    margin: 0 15px; 
+    margin: 0 15px;
 }
 .nav-link {
-    text-decoration: none;  
+    text-decoration: none;
     color: white;
     font-weight: 500;
-    /* Step 8: adding the transition */
-    transition: color 0.3s;  
+    transition: color 0.3s;
 }
 .nav-link:hover,
-.nav-link:focus {          
-    /* Step 9: adding the accessibility with hover and focus */
+.nav-link:focus {
     color: #00c6ff;
-    /* Step 9: focus */
-    outline: 2px solid #00c6ff; 
+    outline: 2px solid #00c6ff;
     outline-offset: 2px;
 }
-/* Step 4: making the box layout and model */
 .layout-section {
     padding: 2rem;
 }
 .contentbox {
-    background-color: white; 
-    border: 1px solid #ddd;  
+    background-color: white;
+    border: 1px solid #ddd;
     margin: 20px auto;
-    max-width: 800px;        
+    max-width: 800px;
     border-radius: 8px;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.1); 
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
 }
 .section-heading {
     font-size: 1.8rem;
@@ -77,48 +64,45 @@ body {
 }
 .paragraph-text {
     font-size: 1rem;
-    text-align: justify; 
+    text-align: justify;
 }
-/* Step 6: media */
 .featured-image {
     width: 100%;
     max-width: 600px;
     display: block;
     margin: 10px auto;
-    border-radius: 10px; 
-    box-shadow: 0 4px 12px rgba(0,0,0,0.2); 
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
 }
 .image-thumbnail {
     width: 150px;
     margin: 10px;
-    border: 2px solid #007bff; 
+    border: 2px solid #007bff;
     border-radius: 8px;
-    transition: transform 0.3s; 
+    transition: transform 0.3s;
 }
 .image-thumbnail:hover {
-    /* Step 8: adding the hover effect */
-    transform: scale(1.05); 
+    transform: scale(1.05);
 }
-/* Step 7: adding forms */
 .form-input {
     display: block;
     width: 100%;
-    padding: 10px;  
-    margin: 10px 0; 
+    padding: 10px;
+    margin: 10px 0;
     border: 1px solid #aaa;
     border-radius: 6px;
 }
 .submit-btn {
-    background-color: #007bff; 
+    background-color: #007bff;
     color: white;
     padding: 10px 15px;
     border: none;
     border-radius: 6px;
     cursor: pointer;
     font-weight: 600;
-    transition: background-color 0.3s; 
+    transition: background-color 0.3s;
 }
-.submit-btn:hover, .submit-btn:focus {  
+.submit-btn:hover, .submit-btn:focus {
     background-color: #0056b3;
     outline: none;
 }
@@ -128,8 +112,6 @@ body {
     padding: 1rem;
     color: white;
 }
-
-/* Step 8: adding pseudo-elements on the button */
 .btn-hover-effect {
     position: relative;
 }
@@ -141,10 +123,165 @@ body {
 .btn-hover-effect:hover::after {
     opacity: 1;
 }
-/* Step 1: descendant selector */
 .nav-list .nav-link {
-     padding: 0.5rem 0.75rem; 
+     padding: 0.5rem 0.75rem;
 }
 .layout-section .section-heading {
-     margin-top: 0; 
+     margin-top: 0;
+}
+/* Here is the beginning of using flexbox and grid*/
+/* Base Flex Container */
+.flex-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 2rem;
+    background-color: #e3f2fd;
+    border-radius: 10px;
+}
+
+/* Flex Items */
+.flex-item {
+    background-color: white;
+    border: 1px solid #ccc;
+    padding: 20px;
+    width: 250px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s;
+}
+.flex-item:hover {
+    transform: translateY(-5px);
+}
+
+/* Cards with Flexbox */
+.card-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    padding: 2rem;
+}
+.card {
+    background-color: #fff;
+    width: 280px;
+    border-radius: 12px;
+    box-shadow: 0 5px 12px rgba(0,0,0,0.1);
+    transition: transform 0.3s;
+}
+.card:hover {
+    transform: scale(1.05);
+}
+.card img {
+    width: 100%;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+}
+.card-content {
+    padding: 1rem;
+}
+.card-title {
+    font-weight: 600;
+    color: #007bff;
+}
+.card-text {
+    color: #555;
+    font-size: 0.95rem;
+}
+/* Using Grid */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 2rem;
+    background-color: #f0f8ff;
+    border-radius: 10px;
+}
+.grid-item {
+    background-color: white;
+    border: 1px solid #ddd;
+    padding: 20px;
+    text-align: center;
+    border-radius: 8px;
+    transition: box-shadow 0.3s;
+}
+.grid-item:hover {
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+/* Grid Areas */
+.grid-layout {
+    display: grid;
+    grid-template-areas:
+        "header header"
+        "sidebar main"
+        "footer footer";
+    grid-template-columns: 1fr 3fr;
+    gap: 20px;
+    padding: 2rem;
+}
+.grid-header { grid-area: header; background: #007bff; color: white; padding: 1rem; border-radius: 8px; }
+.grid-sidebar { grid-area: sidebar; background: #e3f2fd; padding: 1rem; border-radius: 8px; }
+.grid-main { grid-area: main; background: #fff; padding: 1rem; border-radius: 8px; }
+.grid-footer { grid-area: footer; background: #222; color: white; text-align: center; padding: 1rem; border-radius: 8px; }
+
+/* Image Gallery with Grid */
+.image-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    gap: 15px;
+    padding: 2rem;
+}
+.image-gallery img {
+    width: 100%;
+    border-radius: 8px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+.image-gallery img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+}
+/* Combining flexbox and grid */
+.combined-layout {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 20px;
+    padding: 2rem;
+}
+.combined-flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 15px;
+}
+.combined-box {
+    background-color: white;
+    border: 1px solid #ddd;
+    padding: 15px;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+.combined-box {
+    background-color: white;
+    border: 1px solid #ddd;
+    padding: 15px;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+#gallery {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+#gallery iframe,
+#gallery img {
+    max-width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
 }
